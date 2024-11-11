@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaCamera } from "react-icons/fa";
+import Tabs from "./Tabs";
 
 const Profile = () => {
   const [bannerUrl, setBannerUrl] = useState(
@@ -28,7 +29,7 @@ const Profile = () => {
   };
 
   return (
-    <div className="relative w-[95%] ml-[5rem]">
+    <div className="relative w-[94.4%] ml-[5rem]">
       {/* Banner Image */}
       <div className="relative">
         <img
@@ -54,7 +55,7 @@ const Profile = () => {
       </div>
 
       {/* Channel Logo */}
-      <div className="flex items-center pl-4 pb-4 -mt-[1.5rem] bg-slate-200">
+      <div className="flex items-center pl-4 pb-4 -mt-[1.5rem] bg-sky-100">
         <img
           src={profileUrl}
           alt="Channel Logo"
@@ -88,6 +89,8 @@ const Profile = () => {
           </button>
         </div>
       </div>
+
+      <Tabs />
     </div>
   );
 };
